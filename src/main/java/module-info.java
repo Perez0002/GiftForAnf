@@ -3,6 +3,8 @@ module com.example.piratecertif {
     requires javafx.fxml;
 
     requires org.kordamp.ikonli.javafx;
+    requires lombok;
+    requires MaterialFX;
 
     opens com.example.piratecertif to javafx.fxml;
     exports com.example.piratecertif;
