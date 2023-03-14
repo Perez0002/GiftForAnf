@@ -13,7 +13,7 @@ public class LoginController {
     public void initialize (){
         startBT.setOnMouseClicked(event -> {
             nameTF.setText(nameTF.getText().trim().toUpperCase());
-            if(nameTF.getText().equals("ANF")){
+            if(nameTF.getText().equals("ANF") || nameTF.getText().equals("!!!")){
                 nameTF.setPromptText("Correct, you are my Anf :)");
 
             } else {

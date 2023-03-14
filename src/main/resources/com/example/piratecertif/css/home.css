@@ -1,0 +1,33 @@
+
+/* Pane and Vbox control */
+.borderpane {
+    -fx-pref-width: 800;
+    -fx-pref-height: 600;
+    -fx-background-color: aliceblue;
+}
+
+.vbox {
+    -fx-alignment: top-center;
+    -fx-pref-width: 500;
+    -fx-pref-height: 300;
+    -fx-spacing: 10;
+}
+
+.button {
+    -fx-pref-width: 300;
+    -fx-pref-height: 60;
+    -fx-border-radius: 3;
+    -fx-background-color: blue;
+    -fx-font-family: Verdana;
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-padding: 50;
+    -fx-font-family: Verdana;
+    -fx-font-weight: bold;
+    -fx-font-size: 50;
+    -fx-text-fill: blue;
+}
