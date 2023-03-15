@@ -2,20 +2,23 @@
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="borderpane" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.piratecertif.controllers.LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: lightgoldenrodyellow;" styleClass="borderpane" stylesheets="@css/base.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.LoginController">
     <top>
-        <Label text="AHOY!" BorderPane.alignment="CENTER" />
+        <Label style="-fx-text-fill: orange;" styleClass="font" text="AHOY!" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="75.0" />
+         </BorderPane.margin></Label>
     </top>
     <center>
         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="vbox" stylesheets="@css/login.css" BorderPane.alignment="CENTER">
             <children>
-                <MFXTextField fx:id="nameTF" alignment="CENTER" floatMode="DISABLED" promptText="Enter your name" stylesheets="@css/login.css" />
-                <MFXButton fx:id="startBT" text="Start" />
+                <MFXTextField fx:id="nameTF" alignment="CENTER" floatMode="DISABLED" promptText="Enter your name" styleClass="font" stylesheets="@css/login.css" />
+                <MFXButton fx:id="startBT" style="-fx-background-color: orange;" styleClass="font" text="Start" textFill="WHITE" />
             </children>
         </VBox>
     </center>

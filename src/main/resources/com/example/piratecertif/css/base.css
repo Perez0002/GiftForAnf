@@ -1,0 +1,28 @@
+
+.borderpane {
+    -fx-pref-width: 800;
+    -fx-pref-height: 600;
+}
+
+.vbox {
+    -fx-alignment: top-center;
+    -fx-pref-width: 500;
+    -fx-pref-height: 300;
+    -fx-spacing: 10;
+}
+
+.button {
+    -fx-pref-width: 300;
+    -fx-pref-height: 45;
+    -fx-border-radius: 3;
+    -fx-font-size: 16;
+}
+
+.label {
+    -fx-font-size: 50;
+}
+
+.font {
+    -fx-font-family: Verdana;
+    -fx-font-weight: bold;
+}

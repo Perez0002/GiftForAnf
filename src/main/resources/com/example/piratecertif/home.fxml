@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" stylesheets="@css/home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aliceblue;" styleClass="borderpane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.HomeController">
    <top>
-      <Label text="TRAIN" BorderPane.alignment="CENTER" />
+      <Label styleClass="font" text="TRAIN" textFill="BLUE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="75.0" />
+         </BorderPane.margin></Label>
    </top>
    <left>
-      <MFXButton fx:id="clickBT" text="Click to begin!" BorderPane.alignment="CENTER">
+      <MFXButton fx:id="clickBT" style="-fx-background-color: blue;" styleClass="font" text="Click to begin!" textFill="WHITE" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets left="50.0" />
          </BorderPane.margin>
@@ -24,4 +28,8 @@
          </BorderPane.margin>
       </VBox>
    </center>
+   <stylesheets>
+      <URL value="@css/home.css" />
+      <URL value="@css/base.css" />
+   </stylesheets>
 </BorderPane>
