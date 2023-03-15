@@ -17,7 +17,11 @@
          </BorderPane.margin>
       </MFXButton>
    </left>
-   <right>
-      <VBox fx:id="imagesVB" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
-   </right>
+   <center>
+      <VBox fx:id="imagesVB" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
 </BorderPane>

@@ -3,7 +3,7 @@
 .borderpane {
     -fx-pref-width: 800;
     -fx-pref-height: 600;
-    -fx-background-color: aliceblue;
+    -fx-background-color: white;
 }
 
 .vbox {
@@ -31,6 +31,15 @@
     -fx-text-fill: blue;
 }
 
-.image-vbox1 {
-    -fx-background-image: url("images/deloro1.png");
+.stage1 {
+    -fx-background-image: url("images/deloro1.PNG");
+}
+.stage2 {
+    -fx-background-image: url("images/deloro2.PNG");
+}
+.stage3 {
+    -fx-background-image: url("images/deloro3.PNG");
+}
+.stage4 {
+    -fx-background-image: url("images/deloro4.PNG");
 }
