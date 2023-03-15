@@ -1,5 +1,7 @@
 package com.example.piratecertif;
 
+import com.example.piratecertif.navigation.Navigation;
+import com.example.piratecertif.navigation.Screen;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,13 +18,14 @@ public class App extends Application {
     @Setter @Getter private static BorderPane rootPane;
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("login.fxml"));
         App.primaryStage=primaryStage;
-        BorderPane root = fxmlLoader.load();
+        final FXMLLoader loader = new FXMLLoader(App.class.getResource("root.fxml"));
+        final BorderPane root = loader.load();
         App.rootPane = root;
         Scene scene = new Scene(root);
         primaryStage.setTitle("Arrrgh!");
         primaryStage.setScene(scene);
+        Navigation.navigate(Screen.LOGIN);
         primaryStage.show();
     }
 

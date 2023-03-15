@@ -1,5 +1,7 @@
 package com.example.piratecertif.controllers;
 
+import com.example.piratecertif.navigation.Navigation;
+import com.example.piratecertif.navigation.Screen;
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
@@ -14,8 +16,7 @@ public class LoginController {
         startBT.setOnMouseClicked(event -> {
             nameTF.setText(nameTF.getText().trim().toUpperCase());
             if(nameTF.getText().equals("ANF") || nameTF.getText().equals("!!!")){
-                nameTF.setPromptText("Correct, you are my Anf :)");
-
+                Navigation.navigate(Screen.HOME);
             } else {
                 nameTF.setPromptText("That isnt your name >:(");
             }

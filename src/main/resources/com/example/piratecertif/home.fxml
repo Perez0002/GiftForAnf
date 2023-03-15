@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" stylesheets="@css/home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" stylesheets="@css/home.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.HomeController">
    <top>
       <Label text="TRAIN" BorderPane.alignment="CENTER" />
    </top>
-   <center>
-      <MFXButton text="Target Practice" BorderPane.alignment="CENTER" />
-   </center>
+   <left>
+      <MFXButton fx:id="clickBT" text="Click to begin!" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="50.0" />
+         </BorderPane.margin>
+      </MFXButton>
+   </left>
+   <right>
+      <VBox fx:id="imagesVB" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>

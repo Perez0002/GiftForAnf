@@ -1,0 +1,6 @@
+
+.borderpane {
+    -fx-pref-width: 800;
+    -fx-pref-height: 600;
+    -fx-background-color: transparent;
+}

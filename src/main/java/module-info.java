@@ -10,4 +10,6 @@ module com.example.piratecertif {
     exports com.example.piratecertif;
     exports com.example.piratecertif.controllers;
     opens com.example.piratecertif.controllers to javafx.fxml;
+    exports com.example.piratecertif.navigation;
+    opens com.example.piratecertif.navigation to javafx.fxml;
 }

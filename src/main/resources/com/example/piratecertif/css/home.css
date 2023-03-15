@@ -25,9 +25,12 @@
 }
 
 .label {
-    -fx-padding: 50;
     -fx-font-family: Verdana;
     -fx-font-weight: bold;
     -fx-font-size: 50;
     -fx-text-fill: blue;
+}
+
+.image-vbox1 {
+    -fx-background-image: url("images/deloro1.png");
 }
