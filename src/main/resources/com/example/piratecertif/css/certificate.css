@@ -1,11 +1,15 @@
 
 .font {
     -fx-font-family: "Lucida Calligraphy";
-    -fx-font-size: 24;
+    -fx-font-size: 20;
 }
 
 .font2 {
     -fx-font-family: "Lucida Calligraphy";
-    -fx-font-weight: bold;
-    -fx-font-size: 32;
+    -fx-font-size: 28;
+}
+
+.font3 {
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-font-size: 36;
 }

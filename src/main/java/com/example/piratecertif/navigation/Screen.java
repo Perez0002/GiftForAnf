@@ -2,7 +2,8 @@ package com.example.piratecertif.navigation;
 
 public enum Screen {
     LOGIN("login.fxml"),
-    HOME("home.fxml");
+    HOME("home.fxml"),
+    CERTIF("certificate.fxml");
 
     private final String filename;
 

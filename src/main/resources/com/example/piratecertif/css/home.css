@@ -1,13 +1,16 @@
 
-.stage1 {
-    -fx-background-image: url("images/deloro1.PNG");
+.level1 {
+    -fx-background-image: url("images/deloroLevel1.png");
 }
-.stage2 {
-    -fx-background-image: url("images/deloro2.PNG");
+.level2 {
+    -fx-background-image: url("images/deloroLevel2.png");
 }
-.stage3 {
-    -fx-background-image: url("images/deloro3.PNG");
+.level3 {
+    -fx-background-image: url("images/deloroLevel3.png");
 }
-.stage4 {
-    -fx-background-image: url("images/deloro4.PNG");
+.level4 {
+    -fx-background-image: url("images/deloroLevel4.png");
+}
+.level5 {
+    -fx-background-image: url("images/deloroLevel5.png");
 }
