@@ -6,56 +6,82 @@ import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.fxml.FXML;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.VBox;
+import javafx.scene.control.Label;
+import org.kordamp.ikonli.javafx.FontIcon;
 
 public class HomeController {
     @FXML private MFXButton clickBT;
     @FXML private VBox imagesVB;
+    @FXML private FontIcon arrowFontIcon;
+    @FXML private Label instructionsLabel;
     private int counter = 0;
+    private int currentLevel = 0;
     @FXML
     public void initialize(){
-        counter = 0;
         clickBT.setOnMouseClicked(event -> {
-            clickBT.setDisable(true);
-            level1();
-            updateImage();
+            clickBT.setVisible(false);
+            clickBT.setPrefHeight(0);
+            instructionsLabel.setPrefHeight(60);
+            next();
         });
     }
 
-    public void updateImage(){
+    public void updateImage(int level){
         imagesVB.getStyleClass().clear();
-        if(counter<5){imagesVB.getStyleClass().add("level1");}
-        else if(counter<10){imagesVB.getStyleClass().add("level2");}
-        else if(counter<15){imagesVB.getStyleClass().add("level3");}
-        else if(counter<20){imagesVB.getStyleClass().add("level4");}
-        else if(counter<30){imagesVB.getStyleClass().add("level5");}
-        else{Navigation.navigate(Screen.CERTIF);}
+        String css = "level" + level;
+        imagesVB.getStyleClass().add(css);
     }
 
-    public void level1(){
-        int num = (int)(Math.random() * (2 - 1 + 1)) + 1; //(int)(Math.random() * max - min + 1) + min;
+    public void levelControl(){
+        switch(currentLevel){
+            case 1 -> instructionsLabel.setText("Sailing! Steer left and right!");
+            case 2 -> instructionsLabel.setText("Fencing! Strike up, down, left, and right!");
+            case 3 -> instructionsLabel.setText("Pistol! Empty arrow = pull backwards to reload");
+            case 4 -> instructionsLabel.setText("Cannon! Empty arrow = pull backwards to reload");
+            case 5 -> instructionsLabel.setText("Finish your training!!!");
+        }
+
+        int num = (int)(Math.random() * ((currentLevel*2) - 1 + 1)) + 1;
         switch (num) {
-            case 1 -> clickBT.setText("->");
-            case 2 -> clickBT.setText("<-");
+            case 1 -> arrowFontIcon.setIconLiteral("typ-arrow-right-thick");
+            case 2 -> arrowFontIcon.setIconLiteral("typ-arrow-left-thick");
+            case 3 -> arrowFontIcon.setIconLiteral("typ-arrow-up-thick");
+            case 4 -> arrowFontIcon.setIconLiteral("typ-arrow-down-thick");
+            case 5 -> arrowFontIcon.setIconLiteral("typ-arrow-right-outline");
+            case 6 -> arrowFontIcon.setIconLiteral("typ-arrow-left-outline");
+            case 7 -> arrowFontIcon.setIconLiteral("typ-arrow-up-outline");
+            case 8 -> arrowFontIcon.setIconLiteral("typ-arrow-down-outline");
             default-> clickBT.setText("error");
-            }
+        }
         check();
     }
 
+
     public void check() {
         clickBT.getScene().setOnKeyPressed(event -> {
-            if(clickBT.getText().equals("->") && event.getCode() == KeyCode.D){counter++;}
-            else if (clickBT.getText().equals("<-") && event.getCode() == KeyCode.A) {counter++;}
+            if ((arrowFontIcon.getIconLiteral().equals("typ-arrow-right-thick")
+                    ||  arrowFontIcon.getIconLiteral().equals("typ-arrow-left-outline"))
+                    && event.getCode() == KeyCode.RIGHT){counter++;}
+            else if ((arrowFontIcon.getIconLiteral().equals("typ-arrow-left-thick")
+                    || arrowFontIcon.getIconLiteral().equals("typ-arrow-right-outline"))
+                    && event.getCode() == KeyCode.LEFT) {counter++;}
+            else if ((arrowFontIcon.getIconLiteral().equals("typ-arrow-up-thick")
+                    || arrowFontIcon.getIconLiteral().equals("typ-arrow-down-outline"))
+                    && event.getCode() == KeyCode.UP) {counter++;}
+            else if ((arrowFontIcon.getIconLiteral().equals("typ-arrow-down-thick")
+                    || arrowFontIcon.getIconLiteral().equals("typ-arrow-down-outline"))
+                    && event.getCode() == KeyCode.DOWN) {counter++;}
             else {counter--;}
             System.out.println(counter);
             next();
         });
     }
     public void next() {
-        if(counter<5){level1();}
-        else if(counter<10){clickBT.setText("level 2!"); updateImage();}
-        else if(counter<15){level1();}
-        else if(counter<20){level1();}
-        else if(counter<30){level1();}
+        if(counter<5){currentLevel=1; updateImage(1); levelControl();}
+        else if(counter<10){currentLevel=2; updateImage(2); levelControl();}
+        else if(counter<15){currentLevel=3; updateImage(3); levelControl();}
+        else if(counter<20){currentLevel=4; updateImage(4); levelControl();}
+        else if(counter<30){currentLevel=5; updateImage(5); levelControl();}
         else{Navigation.navigate(Screen.CERTIF);}
     }
 }
