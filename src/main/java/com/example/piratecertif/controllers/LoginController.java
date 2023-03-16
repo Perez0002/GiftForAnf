@@ -10,7 +10,6 @@ public class LoginController {
     @FXML MFXButton startBT;
     @FXML MFXTextField nameTF;
 
-
     @FXML
     public void initialize (){
         startBT.setOnMouseClicked(event -> {
@@ -23,5 +22,4 @@ public class LoginController {
             nameTF.setText("");
         });
     }
-
 }

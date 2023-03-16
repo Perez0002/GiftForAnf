@@ -24,7 +24,7 @@
    <center>
       <VBox fx:id="imagesVB" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
          <BorderPane.margin>
-            <Insets />
+            <Insets bottom="70.0" />
          </BorderPane.margin>
       </VBox>
    </center>
