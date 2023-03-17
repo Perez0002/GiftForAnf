@@ -22,6 +22,16 @@ public class HomeController {
         next();
     }
 
+    public void next() {
+        if(counter<1){currentLevel=1; update();}
+        else if(counter<2){currentLevel=2; update();}
+        else if(counter<3){currentLevel=3; update();}
+        else if(counter<4){currentLevel=4; update();}
+        else if(counter<5){currentLevel=5; update();}
+        else if(counter<6){currentLevel=6; update();}
+        else{end();}
+    }
+
     public void update(){
         //update image css
         imagesVB.getStyleClass().clear();
@@ -63,7 +73,7 @@ public class HomeController {
     }
 
     public void check() {
-        System.out.println("made it");
+        //System.out.println("made it");
         clickBT.setOnKeyPressed(event -> {
             if ((arrowFontIcon.getIconLiteral().equals("typ-arrow-right-thick")
                     ||  arrowFontIcon.getIconLiteral().equals("typ-arrow-left-outline"))
@@ -82,19 +92,9 @@ public class HomeController {
             else if (arrowFontIcon.getIconLiteral().equals("typ-spanner")
                     && event.getCode() == KeyCode.ENTER) {counter++;}
             else {counter--;}
-            System.out.println(counter);
+            //System.out.println(counter);
             next();
         });
-    }
-
-    public void next() {
-        if(counter<1){currentLevel=1; update();}
-        else if(counter<2){currentLevel=2; update();}
-        else if(counter<3){currentLevel=3; update();}
-        else if(counter<4){currentLevel=4; update();}
-        else if(counter<5){currentLevel=5; update();}
-        else if(counter<6){currentLevel=6; update();}
-        else{end();}
     }
 
     public void end() {
