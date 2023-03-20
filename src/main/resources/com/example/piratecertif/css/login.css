@@ -1,4 +1,8 @@
 
+.borderpane {
+    -fx-background-image: url("backdrops/login.png");
+}
+
 .mfx-text-field {
     -fx-pref-width: 300;
     -fx-pref-height: 50;

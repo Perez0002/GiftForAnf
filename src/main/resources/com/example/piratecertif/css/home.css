@@ -1,4 +1,8 @@
 
+.borderpane {
+    -fx-background-image: url("backdrops/home.png");
+}
+
 .level1 {
     -fx-background-image: url("images/deloroLevel1.png");
 }

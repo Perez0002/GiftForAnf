@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CORNSILK;" styleClass="borderpane" stylesheets="@css/base.css" xmlns="http://javafx.com/javafx/19">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" xmlns="http://javafx.com/javafx/19">
    <center>
       <VBox alignment="CENTER" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -22,4 +22,8 @@
             <Label alignment="CENTER" layoutX="110.0" layoutY="495.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="375.0" styleClass="font" stylesheets="@css/certificate.css" text="Ahoy, Avast and finally, Arrrrrr!" textAlignment="CENTER" wrapText="true" />
       </VBox>
    </center>
+   <stylesheets>
+      <URL value="@css/base.css" />
+      <URL value="@css/certificate.css" />
+   </stylesheets>
 </BorderPane>
