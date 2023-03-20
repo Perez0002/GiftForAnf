@@ -3,9 +3,18 @@
     -fx-background-image: url("backdrops/login.png");
 }
 
+.button {
+    -fx-background-color: #bd5815;
+}
+
+.label {
+    -fx-background-color: #d3e4ed;
+    -fx-text-fill: #bd5815;
+}
+
 .mfx-text-field {
     -fx-pref-width: 300;
-    -fx-pref-height: 50;
+    -fx-pref-height: 60;
     -fx-background-radius: 3;
     -fx-background-color: white;
     -fx-border-width: 3;
@@ -17,5 +26,5 @@
 .mfx-text-field:focus-within {
     -fx-border-width: 3;
     -fx-border-radius: 3;
-    -fx-border-color: orange;
+    -fx-border-color: #bd5815;
 }

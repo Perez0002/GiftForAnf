@@ -14,7 +14,7 @@ public class LoginController {
     public void initialize (){
         startBT.setOnMouseClicked(event -> {
             nameTF.setText(nameTF.getText().trim().toUpperCase());
-            if(nameTF.getText().equals("ANF") || nameTF.getText().equals("!!!")){
+            if(nameTF.getText().equals("ANF")){
                 Navigation.navigate(Screen.HOME);
             } else {
                 nameTF.setPromptText("That isnt your name >:(");

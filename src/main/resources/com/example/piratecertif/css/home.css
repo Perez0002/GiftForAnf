@@ -3,6 +3,11 @@
     -fx-background-image: url("backdrops/home.png");
 }
 
+.label {
+    -fx-background-color: #a8dcf7;
+    -fx-text-fill: blue;
+}
+
 .level1 {
     -fx-background-image: url("images/deloroLevel1.png");
 }

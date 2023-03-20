@@ -23,12 +23,13 @@ public class HomeController {
     }
 
     public void next() {
-        if(counter<1){currentLevel=1; update();}
-        else if(counter<2){currentLevel=2; update();}
-        else if(counter<3){currentLevel=3; update();}
-        else if(counter<4){currentLevel=4; update();}
-        else if(counter<5){currentLevel=5; update();}
-        else if(counter<6){currentLevel=6; update();}
+        //checks level and updates scene after every key press
+        if(counter<10){currentLevel=1; update();}
+        else if(counter<20){currentLevel=2; update();}
+        else if(counter<30){currentLevel=3; update();}
+        else if(counter<50){currentLevel=4; update();}
+        else if(counter<75){currentLevel=5; update();}
+        else if(counter<100){currentLevel=6; update();}
         else{end();}
     }
 
@@ -45,6 +46,7 @@ public class HomeController {
     }
 
     public void levelControl(){
+        //controls instructions displayed by label
         switch(currentLevel){
             case 1 -> instructionsLabel.setText("Sailing! Steer left and right");
             case 2 -> instructionsLabel.setText("Fencing! Strike up, down, left, and right");
@@ -54,8 +56,8 @@ public class HomeController {
             case 6 -> instructionsLabel.setText("Repair! 'Enter' below deck to fix the damage");
         }
 
-        int num = (int)(Math.random() * ((currentLevel*2) - 1 + 1)) + 1;
-        //System.out.println(num);
+        //select icon to display to press
+        int num = (int)(Math.random() * ((currentLevel*2) - 1 + 1)) + 1; //each level introduces 2 new icons
         switch (num) {
             case 1 -> arrowFontIcon.setIconLiteral("typ-arrow-right-thick");
             case 2 -> arrowFontIcon.setIconLiteral("typ-arrow-left-thick");
@@ -73,7 +75,7 @@ public class HomeController {
     }
 
     public void check() {
-        //System.out.println("made it");
+        //check kb input matches displayed icon
         clickBT.setOnKeyPressed(event -> {
             if ((arrowFontIcon.getIconLiteral().equals("typ-arrow-right-thick")
                     ||  arrowFontIcon.getIconLiteral().equals("typ-arrow-left-outline"))
@@ -92,12 +94,13 @@ public class HomeController {
             else if (arrowFontIcon.getIconLiteral().equals("typ-spanner")
                     && event.getCode() == KeyCode.ENTER) {counter++;}
             else {counter--;}
-            //System.out.println(counter);
+            System.out.println(counter);
             next();
         });
     }
 
     public void end() {
+        //hides icon and label text, and sets up button click
         arrowFontIcon.setVisible(false);
         clickBT.setText("Yaaay! Here's your certificate!");
         instructionsLabel.setText("");

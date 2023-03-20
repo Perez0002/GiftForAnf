@@ -10,7 +10,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="borderpane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.LoginController">
     <top>
-        <Label style="-fx-text-fill: orange;" styleClass="font" text="AHOY!" BorderPane.alignment="CENTER">
+        <Label styleClass="font" text="AHOY!" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets top="75.0" />
          </BorderPane.margin></Label>
@@ -18,7 +18,7 @@
     <center>
         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="vbox" stylesheets="@css/login.css" BorderPane.alignment="CENTER">
                 <MFXTextField fx:id="nameTF" alignment="CENTER" floatMode="DISABLED" promptText="Enter your name" styleClass="font" stylesheets="@css/login.css" />
-                <MFXButton fx:id="startBT" style="-fx-background-color: orange;" styleClass="font" text="Start" textFill="WHITE" />
+                <MFXButton fx:id="startBT" styleClass="font" text="Start" textFill="WHITE" />
         </VBox>
     </center>
    <stylesheets>
