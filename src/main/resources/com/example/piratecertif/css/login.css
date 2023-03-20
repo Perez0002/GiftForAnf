@@ -7,9 +7,13 @@
     -fx-background-color: #bd5815;
 }
 
-.label {
+.label1 {
     -fx-background-color: #d3e4ed;
     -fx-text-fill: #bd5815;
+}
+.label2 {
+    -fx-background-color: #423413;
+    -fx-pref-width: 300;
 }
 
 .mfx-text-field {

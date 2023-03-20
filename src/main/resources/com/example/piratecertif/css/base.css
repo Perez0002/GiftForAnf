@@ -18,10 +18,15 @@
     -fx-font-size: 16;
 }
 
-.label {
+.label1 {
     -fx-font-size: 50;
     -fx-background-radius: 3;
     -fx-alignment: center;
+}
+.label2 {
+    -fx-font-size: 20;
+    -fx-alignment: center;
+    -fx-text-fill: white;
 }
 
 .font {

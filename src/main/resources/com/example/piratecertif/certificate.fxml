@@ -6,18 +6,18 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" xmlns="http://javafx.com/javafx/19">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" xmlns="http://javafx.com/javafx/19" >
    <center>
-      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets />
          </BorderPane.margin>
-            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="656.0" styleClass="font" stylesheets="@css/certificate.css" text="This totally legit document certifies that the below-mentioned salty dog has fulfilled the virtually modified requirements to be a totally real pirate by completing" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="655.0" styleClass="font" stylesheets="@css/certificate.css" text="This totally legit document certifies that the below-mentioned salty dog has fulfilled the virtually modified requirements to be a totally real pirate by completing" textAlignment="CENTER" wrapText="true" />
             <Label alignment="CENTER" prefHeight="60.0" prefWidth="646.0" styleClass="font2" stylesheets="@css/certificate.css" text="Target Hitting, Fencing, Pistol, and Sailing" />
             <Label alignment="CENTER" layoutX="87.0" layoutY="211.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="363.0" styleClass="font" stylesheets="@css/certificate.css" text="Therefore is no longer a Lily-livered landlubber" textAlignment="CENTER" wrapText="true" />
             <Label alignment="CENTER" layoutX="110.0" layoutY="369.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="440.0" styleClass="font" stylesheets="@css/certificate.css" text="And so, the programmer of this software Confers upon" textAlignment="CENTER" wrapText="true" />
             <Label alignment="CENTER" layoutX="41.0" layoutY="279.0" styleClass="font3" stylesheets="@css/certificate.css" text="Captain Anf" />
-            <Label alignment="CENTER" layoutX="268.0" layoutY="464.0" prefHeight="70.0" prefWidth="630.0" styleClass="font3" stylesheets="@css/certificate.css" text="The Pirate Certificate" />
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="430.0" styleClass="font3" stylesheets="@css/certificate.css" text="The Pirate Certificate" />
             <Label alignment="CENTER" layoutX="87.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="443.0" styleClass="font" stylesheets="@css/certificate.css" text="With all its privledges and obligations Given in this swashbucklin' gift" textAlignment="CENTER" wrapText="true" />
             <Label alignment="CENTER" layoutX="110.0" layoutY="495.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="375.0" styleClass="font" stylesheets="@css/certificate.css" text="Ahoy, Avast and finally, Arrrrrr!" textAlignment="CENTER" wrapText="true" />
       </VBox>

@@ -3,7 +3,7 @@
     -fx-background-image: url("backdrops/home.png");
 }
 
-.label {
+.label1 {
     -fx-background-color: #a8dcf7;
     -fx-text-fill: blue;
 }

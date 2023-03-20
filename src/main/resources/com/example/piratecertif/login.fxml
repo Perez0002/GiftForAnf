@@ -2,6 +2,7 @@
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -10,10 +11,14 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="borderpane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.LoginController">
     <top>
-        <Label styleClass="font" text="AHOY!" BorderPane.alignment="CENTER">
+        <Label text="AHOY!" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets top="75.0" />
-         </BorderPane.margin></Label>
+         </BorderPane.margin>
+         <styleClass>
+            <String fx:value="label1" />
+            <String fx:value="font" />
+         </styleClass></Label>
     </top>
     <center>
         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="vbox" stylesheets="@css/login.css" BorderPane.alignment="CENTER">
@@ -25,4 +30,7 @@
       <URL value="@css/base.css" />
       <URL value="@css/login.css" />
    </stylesheets>
+   <bottom>
+      <Label styleClass="label2" stylesheets="@css/base.css" text="All art and code by LivP" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>

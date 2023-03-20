@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -10,18 +11,22 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="borderpane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.piratecertif.controllers.HomeController">
    <top>
-      <Label styleClass="font" text="TRAIN" textFill="BLUE" BorderPane.alignment="CENTER">
+      <Label text="Lets Train To Be A Pirate!" textFill="BLUE" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets top="75.0" />
-         </BorderPane.margin></Label>
+         </BorderPane.margin>
+         <styleClass>
+            <String fx:value="font" />
+            <String fx:value="label1" />
+         </styleClass></Label>
    </top>
    <left>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets left="20.0" top="100.0" />
+            <Insets left="70.0" top="80.0" />
          </BorderPane.margin>
-            <MFXButton fx:id="clickBT" style="-fx-background-color: blue;" styleClass="font" text="Click to begin!" textFill="WHITE" />
-            <Label fx:id="instructionsLabel" alignment="CENTER" prefHeight="80.0" prefWidth="350.0" style="-fx-font-size: 20; -fx-background-color: transparent; -fx-text-fill: white;" text="Let's train to be a pirate!" wrapText="true" />
+            <MFXButton fx:id="clickBT" style="-fx-background-color: blue;" styleClass="font" text=" " textFill="WHITE" />
+            <Label fx:id="instructionsLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="300.0" styleClass="label2" text="Let's train to be a pirate!" textAlignment="CENTER" wrapText="true" />
             <FontIcon fx:id="arrowFontIcon" iconColor="GREEN" iconSize="100" />
       </VBox>
    </left>

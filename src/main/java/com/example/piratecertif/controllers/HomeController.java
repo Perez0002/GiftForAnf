@@ -24,7 +24,8 @@ public class HomeController {
 
     public void next() {
         //checks level and updates scene after every key press
-        if(counter<10){currentLevel=1; update();}
+        if (counter<0) {counter=0;} //no game over
+        else if(counter<10){currentLevel=1; update();}
         else if(counter<20){currentLevel=2; update();}
         else if(counter<30){currentLevel=3; update();}
         else if(counter<50){currentLevel=4; update();}
